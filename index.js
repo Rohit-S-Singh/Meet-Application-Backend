@@ -16,8 +16,8 @@ app.use("/", require("./routes"));
 
 const PORT = process.env.PORT;
 
-const server = app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
+const server = app.listen(8080, () => {
+  console.log(`Listening on port ${8080}`);
 });
 
 const io = require("socket.io")(server, {
